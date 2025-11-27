@@ -1,0 +1,846 @@
+  body {
+    background: #f0f2f5;
+    margin: 0;
+    font-family: IRANSans, Arial, sans-serif;
+    padding: 0px;
+    height: 0;
+    overflow-x:hidden;
+  }
+
+ .box {
+  background: #ffffff;
+  color: #111;
+  min-height: 48px;
+   width: 97%;       
+  max-width: none;
+  padding: 0;       
+  margin: 0 auto;
+ height: 3300px;
+  box-shadow: 0 6px 20px rgba(10,15,25,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  outline: none;
+  overflow: visible;
+ 
+}
+
+.inner-box {
+  background: #fafafa;
+  min-height: 30px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;         
+  box-sizing: border-box; 
+  margin: 0;            
+  padding: 0;   
+  position:relative ;
+  bottom: 67px;
+  height: 200px;     
+  overflow: hidden;
+    border-bottom: 6px solid rgb(255, 255, 255); 
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25); 
+
+}
+
+  .inner-box {
+  background-image: url('templatemo-header-9e.png');
+  background-size: cover;           
+  background-position: center;      
+background-position: center -0%; 
+ background-size: 120%;
+  
+}
+
+.templatemo-img{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.Free-Templates{
+margin-left: 50px;
+color: #ffffff;
+height: 0;
+position: relative;
+bottom: 3px;
+}
+.button-for{
+position: relative;
+bottom: 30px;
+   clear: both;
+    float: right;
+    max-width: 680px;
+     padding: 1px 44px; 
+
+}
+.button-for button{
+  cursor: pointer;
+}
+
+.inner-box button {
+  font-size: 16px;    
+  padding: 17px 20px;  
+  display: inline-block; 
+ color: #0066AA;
+  background: linear-gradient(#fff, #d8d8d8, #fff, #fff, #c6c6c6);
+  border: none;
+  margin-right: 6px;
+}
+.inner-box button:hover{
+    color: rgba(221, 1, 1, 0.89);
+      background: linear-gradient( #d8d8d8, #fff, #fff);
+}
+
+   .box-one{
+      border: 6px solid rgb(255, 255, 255); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); 
+background: linear-gradient(45deg, #5A5A5A, #303030);
+  min-height: 30px;
+  color: #333;
+max-width: 93%;        
+  box-sizing: border-box; 
+  margin: 0;              
+  padding: 0;   
+  position:relative ;
+  bottom: 67px;
+ margin: 0 auto; 
+  font-family: sans-serif;
+
+   }
+ .box-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 90px  ; 
+
+}
+
+.box-one h1,
+.box-one p {
+  margin: 0; 
+  padding: 0; 
+  color: #fff;
+  line-height: 1.6;
+  padding-left: 0px;
+ 
+}
+
+.box-one h1 {
+  font-size: 42px;
+  margin-bottom: 4px; 
+font-family: sans-serif;
+padding-bottom: 20px;
+font-weight: normal;
+   
+}
+
+.box-one p {
+  font-size: 17px;
+  color: #ddd;
+  margin-bottom: 14px;
+     
+}
+
+.Latest-2{
+position: relative;
+top: 20px;
+
+}
+.Latest-3{
+position: relative;
+top: 20px;
+color:#9CF; 
+text-decoration: none;
+}
+.Latest-4{
+position: relative;
+bottom: 0px;
+    max-width: 680px;
+top: 30px;
+
+}
+
+.Latest-3 a {
+  color: #9CF;
+  text-decoration: none;
+ margin-right: 0px;
+}
+
+.Latest-3 a:hover {
+  color: #FF6;
+  text-decoration: underline;
+}
+.Latest a {
+  color: #9CF;
+  text-decoration: none;
+
+}
+
+.Latest a:hover {
+  color: #FF6;
+  text-decoration: underline;
+}
+
+.Latest-4 button {
+    border: 2px solid #6d6d6d; /* بوردر اصلی */
+    border-radius: 5px;
+    padding: 17px 30px;
+    background: linear-gradient(#626466, #303132);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.3s; /* فقط رنگ متن تغییر می‌کند */
+    outline: none;
+    box-shadow: none; /* سایه ثابت */
+}
+
+.Latest-4 button:hover {
+    color: #FF6;  /* فقط متن زرد شود */
+    background: linear-gradient(#626466, #303132); /* بکگراند ثابت */
+    border: 2px solid #626466; /* بوردر ثابت */
+    outline: none;
+    box-shadow: none; /* سایه ثابت */
+}
+
+
+
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 ستون */
+  gap: 34px;            /* فاصله بین باکس‌ها */
+  max-width: 1200px;
+  margin: 36px auto;
+  margin-top: -50px; 
+  grid-auto-rows: auto; /* هر ردیف به اندازه‌ی محتوا ارتفاع می‌گیرد */
+}
+
+.box-item {
+  position: relative;
+  overflow: visible;
+  background: transparent;
+  width: 100%;
+  height: auto;        /* ارتفاع خودکار بر اساس محتوا */
+  min-height: 0;
+ 
+  border-radius: 0;    /* خودت اگر خواستی گوشه‌ها را اضافه کن */
+  transition: none;    /* غیرفعال کردن افکت‌ها (تو خواستی بدون hover باشه) */
+}
+
+/* تصویر — اندازه کوچکتر و ثابت نسبت معقول، بدون ایجاد ارتفاع ثابت برای کارت */
+.box-item img {
+  width: 100%;
+  height: 280px; /* کمی ارتفاع کمتر میده تا زوم کمتر بشه */
+  display: block;
+  object-fit: contain; /* به جای cover باعث میشه عکس کامل‌تر نشون داده بشه */
+  object-position: center; /* وسط‌چین بمونه */
+  border: none;
+  position: relative;
+  z-index: 2;
+  background: #fff; /* برای اگه عکس کوچیک‌تر شد زمینه سفید پرش کنه */
+}
+
+
+/* محتوای سفید زیر عکس — ارتفاع خودکار، کمی overlap ظریف با عکس */
+.box-content {
+  background: #F4F4F4;
+  padding: 12px 24px;
+  text-align: center; /* اینجا متن وسط باکس میشه */
+  border-radius: 0 0 24px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 0;
+  height: auto;
+  overflow: visible;
+  margin-top: -8px;
+  direction: ltr;
+  font-family: sans-serif;
+  border-bottom: 3px solid #e4e4e4;
+}
+
+/* متن و لینک داخل باکس (تنظیمات پایه) */
+.box-content a:hover{color: #CC0066;
+    text-decoration: underline;}
+.box-content a { display: inline-block; margin: 6px 0; font-weight: 600; color: #0077cc; text-decoration: none;  }
+.box-content p { margin: 6px 0 0 0; color: #444; font-size: 13px; }
+.site-wrapper {
+  width: 100%;
+  max-width: 1250px;   /* عرض ثابت برای کل محتوا */
+  margin: 0 auto;      /* مرکز نگه داشتن همه چیز */
+  position: relative;
+}
+
+.box-item-1 {
+  width: max-content;
+  padding: 12px 70px;
+  border-radius: 0 0 24px 0;
+  background-color: #F4F4F4;
+  border-bottom: 3px solid #e4e4e4;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;   /* بردنش به راست */
+  margin-right: 0;     /* قفل کردن کنار راست */
+  margin-top: -20px;   /* مثل قبل */
+}
+
+.box-item-1:hover {
+  background: #ebe9e9;
+}
+
+.box-item-1 a {
+  text-decoration: none;
+  color: #06A;
+}
+
+.box-item-1:hover a {
+  color: #555;
+  text-decoration: underline;
+}
+
+
+
+
+.box-container:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.box-container:first-of-type .box-item {
+  flex: 1 1 calc(25% - 25px);
+  max-width: calc(25% - 25px);
+  background: transparent;
+  border-radius: 0 0 32px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s ease;
+  height: auto; /* تا فقط به اندازه محتوا رشد کنه */
+}
+
+.box-container:first-of-type .box-item img {
+  width: 100%;
+  height: 180px; /* کوچیک‌تر شد که با بقیه یکی شه */
+  object-fit: cover;
+  display: block;
+}
+
+.box-container:first-of-type .box-content {
+  background: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  top: -10px; /* عکس یکم بیاد پایین‌تر */
+}
+/* بلاک سفید جایگزین تبلیغات */
+.ad-placeholder {
+  width: 100%;
+  height: 200px; /* ارتفاع تبلیغات قبلی */
+  background-color: #ffffff; /* سفید */
+}
+
+/* سکشن بعدی */
+.next-section {
+  background-color: #f0f2f5; /* رنگ زمینه سکشن بعدی */
+  padding: 50px 20px;        /* فاصله داخلی */
+}
+.faq-section {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff; /* پس‌زمینه سفید */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+  margin-bottom: 20px; /* فاصله بین آیتم‌ها کم و منظم */
+}
+
+.faq-item h3 {
+  color: #2ecc71; /* سبز */
+  font-size: 20px;
+  margin: 0 0 6px 0; /* فاصله کمتر زیر عنوان */
+}
+
+.faq-item p {
+  color: #333333; /* مشکی */
+  font-size: 16px;
+  line-height: 1.5; /* فاصله خطوط مناسب */
+  margin: 0;
+}
+.next-section h2, 
+.next-section h3, 
+.next-section p {
+  margin: 0;        /* حذف فاصله پیش‌فرض */
+  padding: 4px 0;   /* فاصله خیلی کم بین خطوط */
+  line-height: 1.4; /* فاصله خطوط کمتر و جمع‌تر */
+}
+
+.faq-section .faq-item {
+  margin-bottom: 12px; /* فاصله کم بین آیتم‌ها */
+}
+
+.faq-link {
+  color: #0077cc; /* لینک آبی */
+  text-decoration: none;
+}
+
+.faq-link:hover {
+  text-decoration: underline;
+}
+.box-oner{
+
+  min-height: 30px;
+max-width: 93%;        
+  margin: 0;              
+  padding: 0;   
+  position:relative ;
+  bottom: 67px;
+  right: 50px;
+ margin: 0 auto; 
+  font-family: sans-serif;
+
+   }
+ .box-oner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 90px  ; 
+
+}
+
+.box-oner h1,
+.box-oner p {
+  margin: 0; 
+  padding: 0; 
+
+  line-height: 1.6;
+  padding-left: 0px;
+ 
+}
+
+.box-oner h1 {
+  font-size: 25px;
+  margin-bottom: 4px; 
+font-family: sans-serif;
+padding-bottom: 20px;
+font-weight: normal;
+color: #009900;
+   
+}
+.link-free{text-decoration: none;     color: #0066AA;}
+.link-free:hover{color: #CC0066;
+    text-decoration: underline;}
+.box-oner p {
+  font-size: 17px;
+  
+  margin-bottom: 14px;
+     
+}
+
+
+/* رنگ‌ها */
+.red { background-color: #4267B2; }
+.blue { background-color: #000000; }
+.green { background-color: #448AFF; }
+.yellow { background-color: #CB2027; }
+.purple { background-color: #7d7d7d; }
+.orange { background-color: #95D03A; }
+.number{font-size: 11px;}
+
+.small-box-wrapper {
+  display: flex;
+  justify-content: center;   /* وسط صفحه */
+  align-items: center;       /* تراز عمودی */
+  gap: 15px;                 /* فاصله بین متن و باکس‌ها */
+  margin: 0px auto;
+  position: relative;
+  right: -120px;
+    margin: -170px auto 36px auto; 
+ display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.share-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: sans-serif;
+  color: #555;
+  font-size: 12px;
+}
+
+.share-num {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.share-text {
+  font-size: 11px;
+  color: #666;
+}
+
+.small-box-container {
+  display: flex;
+  gap: 10px;
+}
+
+.small-box {
+  width: 120px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* آیکون سمت چپ، عدد کنار آن */
+  padding: 0 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.small-box:hover {
+  transform: translateY(-5px);   /* یکم بالا رفتن */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* سایه قوی‌تر هنگام هاور */
+  cursor: pointer; /* موس تغییر کنه */
+}
+
+.small-box.red:hover { background-color: #365899; }       /* آبی فیسبوک تیره‌تر */
+.small-box.blue:hover { background-color: #333333; }      /* مشکی تیره‌تر */
+.small-box.green:hover { background-color: #2979FF; }     /* آبی مسنجر تیره‌تر */
+.small-box.yellow:hover { background-color: #A81D23; }    /* قرمز پینترست تیره‌تر */
+.small-box.purple:hover { background-color: #5a5a5a; }   /* خاکستری تیره‌تر */
+.small-box.orange:hover { background-color: #7BC02B; } 
+
+.small-box img.icon {
+  width: 15px;
+  height: 25px;
+  margin-right: 6px;
+}
+
+.number {
+  font-size: 12px;
+  position: relative;
+  right: -30px;
+}
+.icon-1{position: relative; right: -50px;}
+
+/* Footer */
+.site-footer {
+  width: 100%;
+  background-color: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;       /* فاصله بالا و پایین کم */
+  font-size: 12px;      /* فونت کوچک‌تر */
+  line-height: 0.9;     /* ارتفاع خط کم‌تر */
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;       /* فاصله بین لینک‌ها */
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+/* باکس اصلی همیشه وسط باشد */
+.box {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* مانیتورهای بزرگ → عرض کمتر شود */
+@media (min-width: 1600px) {
+    .box {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .box {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .box {
+        max-width: 1050px;
+    }
+}
+
+@media (min-width: 2600px) {
+    .box {
+        max-width: 900px;
+    }
+}
+
+/* موبایل خیلی کوچک: تا 468px */
+@media (max-width: 468px) { 
+    .inner-box {
+        padding: 10px 20px 40px 20px;
+        min-height: 300px;
+    }
+    .templatemo-img {
+        width: 270px;
+        margin: 20px 10px 0px 10px;
+    }
+    .Free-Templates {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .button-for {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 56px;
+        margin-right: 25px;
+    }
+    .button-for button {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 13px;
+    }
+    .button-for button:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+}
+
+/* موبایل بزرگ / تبلت: از 469px تا 676px */
+@media (min-width: 469px) and (max-width: 676px) { 
+    .inner-box {
+        padding: 20px 30px 50px 30px;
+        min-height: 350px;
+    }
+    .templatemo-img {
+        width: 300px;
+        margin: 25px 15px 0px 15px;
+    }
+    .Free-Templates {
+        font-size: 14px;
+        margin-left: 25px;
+        margin-bottom: 12px;
+    }
+    .button-for {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    .button-for button {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 14px;
+    }
+    .button-for button:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+}
+/* تبلت: 677px تا 1024px */
+@media (min-width: 677px) and (max-width: 1024px) {
+    /* باکس اصلی سکشن اول */
+    .inner-box {
+        padding: 30px 50px 60px 50px; /* بالا و پایین بیشتر برای جا دادن عکس و متن */
+        min-height: 400px; /* ارتفاع مناسب تبلت */
+    }
+
+    /* عکس و متن */
+    .templatemo-img {
+        width: 350px;
+        margin: 30px 20px 0px 20px;
+    }
+
+    .Free-Templates {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+
+   
+
+   
+}
+@media (max-width: 516px) {
+  .Latest-4 {
+        display: flex;
+        flex-direction: column; /* دکمه‌ها زیر هم */
+        gap: 12px;              /* فاصله بین دکمه‌ها */
+        align-items: flex-start; /* دکمه‌ها اندازه خودشون حفظ بشه */
+    }
+
+    .box-one {
+        padding: 35px 25px;   /* باکس خیلی جمع‌تر */
+        min-height: auto;
+    }
+
+    .box-one h1 {
+        font-size: 26px;      /* کوچک‌تر ولی خوانا */
+        line-height: 1.2;     /* جمع شدن متن */
+        margin-bottom: 6px;
+    }
+
+    .box-one p {
+        font-size: 14px;      /* جمع و تمیز */
+        line-height: 2.1;     /* متن کوتاه‌تر */
+        margin-bottom: 8px;
+    }
+
+    .Latest-2,
+    .Latest-3,
+    .Latest-4 {
+        font-size: 14px;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    .Latest-4 button {
+        padding: 12px 18px;   /* دکمه جمع‌وجورتر */
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 768px) {
+
+    .Latest-4 {
+        display: flex;
+        flex-direction: row;      /* کنار هم */
+        gap: 14px;
+    }
+
+    .Latest-4 button {
+        width: auto;
+        white-space: nowrap;      /* نذاره متن بشکنه */
+    }
+
+}
+
+@media (max-width: 667px) {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* دو ستون */
+        gap: 12px; /* فاصله بین باکس‌ها */
+    }
+}
+@media (max-width: 676px) {
+    .box-oner {
+        padding: px 20px; /* فاصله داخلی کمتر */
+        width: 95%;
+    }
+
+    .box-oner h1, 
+    .box-oner p {
+        width: 100%; 
+        font-size: 18px;   /* جمع‌تر ولی هنوز قابل خوندن */
+        line-height: 1.3;  /* خطوط جمع و مرتب */
+        word-break: break-word;
+        overflow-wrap: break-word;
+        margin-bottom: 10px;
+    }
+}
+/* =================== Small Box Section Responsive =================== */
+
+@media (max-width: 480px) {
+    .small-box-wrapper {
+        flex-wrap: nowrap;        /* همه کنار هم */
+        justify-content: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -90px;           /* صفر، از سمت چپ */
+    }
+.icon-1{position: relative; right: 0px;}
+    .share-info {
+        font-size: 12px;
+        white-space: nowrap;      /* متن در یک خط */
+    }
+
+    .small-box-container {
+        gap: 6px;
+    }
+
+    .small-box {
+        width: 48px;              /* فقط آیکون */
+        height: 40px;
+        padding: 0;
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .small-box img {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
+
+    .small-box .number {
+        display: none;            /* متن داخل باکس مخفی شود */
+    }
+}
+
+/* =================== ریسپانسیو تبلت =================== */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .small-box-wrapper {
+        justify-content: flex-start; /* کنار چپ */
+        gap: 12px;
+        padding: 0 40px;
+    }
+
+    .small-box {
+        width: 100px;
+        height: 34px;
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .small-box img {
+        width: 15px;
+        height: 20px;
+        margin-right: 4px;
+    }
+
+    .small-box .number {
+        display: inline;
+    }
+
+    .share-info {
+        font-size: 13px;
+    }
+}
+/* موبایل: جمع کردن متن و خط دوم برای دو لینک آخر */
+@media (max-width: 576px) {
+  .site-footer .footer-content {
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0; /* فاصله بین لینک‌ها صفر، به هم بچسبن */
+    line-height: 1.4; /* فاصله خطوط استاندارد */
+  }
+
+  /* فقط دو لینک آخر به خط دوم */
+  .site-footer a:nth-last-child(-n+2) {
+    flex-basis: 13%;       /* خط جدید */
+    margin-top: 6px;        /* فاصله کمی از خط اول */
+    text-align: center;     /* وسط چین کردن */
+  }
+
+  .site-footer span,
+  .site-footer a:not(:nth-last-child(-n+2)) {
+    margin-right: 2px;      /* فاصله کم بین متن و لینک‌ها */
+  }
+  .site-wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+}
+
