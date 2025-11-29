@@ -756,7 +756,7 @@ color: #009900;
         justify-content: flex-start;
         width: 100%;
         box-sizing: border-box;
-        margin-left: -90px;           /* صفر، از سمت چپ */
+        margin-left: -120px;           /* صفر، از سمت چپ */
     }
 .icon-1{position: relative; right: 0px;}
     .share-info {
