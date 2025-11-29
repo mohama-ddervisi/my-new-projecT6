@@ -583,7 +583,7 @@ color: #009900;
 }
 
 /* موبایل خیلی کوچک: تا 468px */
-@media (max-width: 468px) { 
+@media (max-width: 676px) { 
     .inner-box {
         padding: 10px 20px 40px 20px;
         min-height: 300px;
@@ -616,11 +616,8 @@ color: #009900;
 }
 
 /* موبایل بزرگ / تبلت: از 469px تا 676px */
-@media (min-width: 469px) and (max-width: 676px) { 
-    .inner-box {
-        padding: 20px 30px 50px 30px;
-        min-height: 350px;
-    }
+@media (min-width: 677px) and (max-width: 1024px) { 
+   
     .templatemo-img {
         width: 300px;
         margin: 25px 15px 0px 15px;
@@ -630,48 +627,74 @@ color: #009900;
         margin-left: 25px;
         margin-bottom: 12px;
     }
-    .button-for {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 60px;
-        margin-right: 20px;
+     .inner-box {
+        padding: 20px 30px 50px 30px;
+      min-height: 30px;   /* یا هر مقدار دیفالتت */
     }
+
+    /* دکمه‌ها مثل دیفالت در یک خط */
+   .button-for {
+    display: flex;       /* از گرید برگردون به فلکس */
+    flex-wrap: nowrap;   /* نذار برن خط بعد */
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
     .button-for button {
-        width: 100%;
-        padding: 16px 0;
+        width: auto;       /* مثل دیفالت */
+        padding: 10px 20px;
         font-size: 14px;
     }
+
+    /* این خط حذف میشه چون دیگه grid نداری */
     .button-for button:nth-child(4) {
-        grid-column: 1 / 2;
+        grid-column: auto;
     }
 }
 /* تبلت: 677px تا 1024px */
 @media (min-width: 677px) and (max-width: 1024px) {
     /* باکس اصلی سکشن اول */
-    .inner-box {
-        padding: 30px 50px 60px 50px; /* بالا و پایین بیشتر برای جا دادن عکس و متن */
-        min-height: 400px; /* ارتفاع مناسب تبلت */
-    }
+   .inner-box {
+  min-height: 30px;
+  font-size: 14px;
+  color: #333;
+  position:relative ;
+  bottom: 67px;
+  height: 200px;     
+  overflow: hidden;
+    border-bottom: 6px solid rgb(255, 255, 255); 
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25); 
 
+}
+ .button-for {
+    display: flex;       /* از گرید برگردون به فلکس */
+    flex-wrap: nowrap;   /* نذار برن خط بعد */
+    justify-content: center;
+    gap: 1px;
+    width: 100%;
+    margin-top: 60px;
+    margin-right: -30px;
+ }
     /* عکس و متن */
     .templatemo-img {
-        width: 350px;
-        margin: 30px 20px 0px 20px;
+        width: 200px;
+        margin: 0px 20px 0px 20px;
     }
 
     .Free-Templates {
         font-size: 16px;
         margin-left: 30px;
-        margin-bottom: 15px;
+        margin-bottom: -14px;
     }
 
    
 
    
 }
-@media (max-width: 516px) {
+@media (max-width: 676px) {
   .Latest-4 {
         display: flex;
         flex-direction: column; /* دکمه‌ها زیر هم */
@@ -710,19 +733,27 @@ color: #009900;
     }
 }
 
-@media (min-width: 516px) and (max-width: 768px) {
-
-    .Latest-4 {
+/* تبلت: 677px تا 1024px */
+@media (min-width: 677px) and (max-width: 1024px) {
+  .Latest-4 {
         display: flex;
-        flex-direction: row;      /* کنار هم */
+        flex-wrap: wrap;
         gap: 14px;
     }
 
     .Latest-4 button {
-        width: auto;
-        white-space: nowrap;      /* نذاره متن بشکنه */
+        flex: 0 0 auto;        /* اندازه دکمه‌ها ثابت */
+        margin-bottom: 0;      /* همه کنار هم */
     }
 
+    /* اگر تعداد دکمه‌ها بیشتر بود و بخوای سه تا کنار هم نزدیک دسکتاپ: */
+    @media (min-width: 900px) {
+        .Latest-4 {
+            grid-template-columns: repeat(3, 1fr); /* سه دکمه کنار هم */
+        }
+    }
+
+   
 }
 
 @media (max-width: 667px) {
@@ -789,11 +820,9 @@ color: #009900;
 
 /* =================== ریسپانسیو تبلت =================== */
 @media (min-width: 481px) and (max-width: 1024px) {
-    .small-box-wrapper {
-        justify-content: flex-start; /* کنار چپ */
-        gap: 12px;
-        padding: 0 40px;
-    }
+   
+
+
 
     .small-box {
         width: 100px;
@@ -811,11 +840,89 @@ color: #009900;
     .small-box .number {
         display: inline;
     }
-
-    .share-info {
-        font-size: 13px;
-    }
+.small-box {
+    width: 48px;
+    height: 40px;
+    font-size: 0;
 }
+.small-box .number {
+    display: none;
+}
+  .small-box-wrapper {
+        flex-wrap: nowrap;        /* همه کنار هم */
+        justify-content: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -120px;           /* صفر، از سمت چپ */
+    }
+.icon-1{position: relative; right: 0px;}
+.icon{position: relative; right: -14px;}
+/* متن سمت چپ */
+.share-info {
+    flex: 0 0 auto;           /* اندازه متن ثابت */
+    white-space: nowrap;       /* خط نشکنه */
+    text-align: left;
+}
+
+/* باکس‌ها */
+.small-box-container {
+    display: flex;
+    flex-wrap: nowrap;         /* کنار هم بمونن */
+    gap: 8px;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    
+}
+
+/* وقتی >= 480px - باکس قرمز + متن ظاهر */
+@media (min-width: 480px) {
+    .small-box.red {
+        width: 120px;  /* سایز دسکتاپ */
+    }
+    .small-box.red .number { display: inline; }
+}
+
+/* وقتی >= 600px - باکس آبی */
+@media (min-width: 600px) {
+    .small-box.blue {
+        width: 120px;
+    }
+    .small-box.blue .number { display: inline; }
+}
+
+/* وقتی >= 720px - باکس سبز */
+@media (min-width: 720px) {
+    .small-box.green {
+        width: 120px;
+    }
+    .small-box.green .number { display: inline; }
+}
+
+/* وقتی >= 840px - باکس زرد */
+@media (min-width: 840px) {
+    .small-box.yellow {
+        width: 120px;
+    }
+    .small-box.yellow .number { display: inline; }
+}
+
+/* وقتی >= 960px - باکس بنفش */
+@media (min-width: 960px) {
+    .small-box.purple {
+        width: 120px;
+    }
+    .small-box.purple .number { display: inline; }
+}
+
+/* وقتی >= 1080px - باکس نارنجی */
+@media (min-width: 1080px) {
+    .small-box.orange {
+        width: 120px;
+    }
+    .small-box.orange .number { display: inline; }
+}
+}
+
 /* موبایل: جمع کردن متن و خط دوم برای دو لینک آخر */
 @media (max-width: 576px) {
   .site-footer .footer-content {
